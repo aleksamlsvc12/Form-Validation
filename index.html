@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="form">
+    <p id="sign-up">Sign Up</p>
+
+    <div class="form-field">
+      <p class="header">Username:</p>
+      <input class="input" id="username" name="username" type="text" onkeyup="usernameCheck()" placeholder="Enter your username">
+      <p class="warning"></p>
+    </div>
+    
+    <div class="form-field">
+      <p class="header">Email:</p>
+      <input class="input" id="email" name="email" type="email" onkeyup="emailCheck()" placeholder="Enter your email">
+      <p class="warning"></p>
+    </div>
+    
+    <div class="form-field">
+      <p class="header">Password:</p>
+      <input class="input" id="pass" name="pass" type="password" onkeyup="passCheck()" placeholder="Enter your password">
+      <p class="warning"></p>
+      <button class="visibility" type="button" onclick="visibility(0)">
+        <img src="visibility.png" alt="visibility.png" >
+      </button>
+    </div>
+
+    <div class="form-field">
+      <p class="header">Confirm Password:</p>
+      <input class="input" id="confirmPass" name="confirmPass" type="password" onkeyup="confirmPassCheck()" placeholder="Reenter your password">
+      <p class="warning"></p>
+      <button class="visibility" type="button" onclick="visibility(1)">
+        <img src="visibility.png" alt="visibility.png">
+      </button>
+    </div>
+
+    <button id="button-signUp" onclick="signUp(event)">Sign Up</button>    
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
