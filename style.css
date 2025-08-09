@@ -2,8 +2,10 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
   margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: rgb(230, 230, 230);
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -15,7 +17,8 @@ body{
   display: flex;
   flex-direction: column;
   padding: 50px;
-  width: 300px;
+  width: 80%;
+  box-sizing: border-box;
 }
 
 #sign-up{
@@ -35,16 +38,16 @@ body{
 
 .input{
   padding: 10px;
+  padding-right: 50px;
   border: 1px solid gray;
   border-radius: 4px;
-  width: 90%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .warning{
-  margin-top: 6px;
   font-size: 12px;
   color: rgb(230, 0, 0);
-  
 }
 
 #button-signUp{
@@ -72,18 +75,15 @@ body{
 }
 
 .visibility{
-  position: absolute;
-  top: 40px;
-  right: 12px;
-
   width: 26px;
   height: 26px;
-
   border: none;
   border-radius: 13px;
   background-color: transparent;
   transition: 0.2s;
   cursor: pointer;
+  position: absolute;
+  right: 1%;
 }
 
 .visibility:hover{
@@ -94,4 +94,9 @@ img{
   width: 100%;
   height: 100%;
   object-fit: scale-down;
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
 }
