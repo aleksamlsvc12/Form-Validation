@@ -3,8 +3,6 @@ const email = document.getElementById('email');
 const pass = document.getElementById('pass');
 const confirmPass = document.getElementById('confirmPass');
 
-const button1 = document.getElementsByClassName('visibility')[0];
-
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const passPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
 
@@ -58,8 +56,6 @@ function passCheck(){
     }else{
       document.getElementsByClassName('warning')[2].innerHTML = 'Password must has at least 8 characters that include at least 1 lowercase letter, 1 uppercase letter, 1 number, and 1 special character in (!@#$%^&*).';
       pass.style.border = '2px solid rgb(230, 0, 0)';
-      button1.style.top = '40px';
-      button1.style.right = '12px';
     }
   }
 
